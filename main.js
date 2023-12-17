@@ -4,7 +4,13 @@ lastNames = Array("Cheese", "Biggs", "Gregory", "Richards", "Richardson", "Simon
 const person = {
   firstName: firstNames[Math.floor(Math.random()*firstNames.length)];,
   lastName:  lastNames[Math.floor(Math.random()*lastNames.length)];,
-  health: 5566,
-  fullName : function() {
-    return {this.firstName, this.lastName, this.health}
+  status: 0,
+  maxhealth: Math.floor(Math.random()*20) + 10,
+  currenthealth: maxhealth,
+  
+  statusCheck : function() {
+    if (currenthealth <= 0) {
+      status = 1;
+      return status
+    }
   }
