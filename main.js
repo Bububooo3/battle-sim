@@ -2,8 +2,10 @@ firstNames = Array("Billy", "Bob", "Joe", "James", "Mark", "Simon", "Richard", "
 lastNames = Array("Cheese", "Biggs", "Gregory", "Richards", "Richardson", "Simons", "Simone", "Wayne", "Smalls", "Maples", "Bogs", "Scott", "O'Connors", "Junior", "Senior", "Rod", "Rodson", "Hipp", "Doffman", "Entes", "Wrench", "Bulgar", "Polo", "Swift", "Mattson")
 
 const person = {
-  firstName: firstNames[Math.floor(Math.random()*firstNames.length)];,
-  lastName:  lastNames[Math.floor(Math.random()*lastNames.length)];,
+  firstName: firstNames[Math.floor(Math.random()*firstNames.length)],
+  lastName:  lastNames[Math.floor(Math.random()*lastNames.length)],
+  fullName: firstName + lastName,
+  
   status: 0,
   maxhealth: Math.floor(Math.random()*20) + 10,
   currenthealth: maxhealth,
